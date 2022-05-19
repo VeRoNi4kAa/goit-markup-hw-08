@@ -1,0 +1,26 @@
+.logotip {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    
+    color: var(--color-1);
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    }
+    
+    .logo {
+        color: #000000;
+    }
+    .page-footer__logotip {
+        display: inline-block;
+    margin-bottom: 20px;
+    }
+    .page-footer__logo {
+        color: var(--background-color);
+    }
+    .page-footer .nav-site__logotip {
+        display: inline-block;
+        margin-bottom: 20px;
+    }

@@ -1,0 +1,51 @@
+body {
+    font-family: 'Roboto', sens-serif;
+    letter-spacing: 0.03em;
+    
+}
+ul {
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+h1, h2, h3, p {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media screen and (min-width: 480px) {
+            width: 480px;
+          }
+
+@media (min-width: 768px) {
+    width: 768px;
+}
+
+@media (min-width: 1200px) {
+    width: 1200px;
+}
+}
+
+svg {
+    display: block;
+    max-width: 100%;
+}
