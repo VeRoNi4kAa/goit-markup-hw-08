@@ -19,7 +19,8 @@ text-align: center;
 }
 .clients-item {
     width: calc(100% / 2 - 30px);
-    margin-left: 30px;
+    margin-right: 30px;
+    
     @media (min-width: 1200px) {
         display: flex;
     }

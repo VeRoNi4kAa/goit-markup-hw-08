@@ -24,6 +24,9 @@
 
 .team .list {
     margin-bottom: -30px;
+    @media (min-width: 768px){
+        width: 354px;
+    }
     @media (min-width: 1200px){
     display: flex;
     margin-top: 50px;
@@ -45,7 +48,7 @@
     .img {
         position: relative;
         display: block;
-        flex-basis: calc(100% - 90px / 3)
+        flex-basis: calc((100% - 90px) / 3)
     }
     .list-img {
         display: flex;
@@ -155,6 +158,13 @@
             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
             border-radius: 0px 0px 4px 4px;
             margin-bottom: 30px;
+            @media (min-width: 768px){
+                width: calc(100% - 30px / 2);
+                background-color: var(--background-color);
+                box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+                border-radius: 0px 0px 4px 4px;
+                margin-left: 30px;
+            }
             @media (min-width: 1200px){
             flex-basis: calc(100% - 90px / 4);
             background-color: var(--background-color);
