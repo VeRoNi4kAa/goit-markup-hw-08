@@ -1,17 +1,29 @@
 .clients-title {
     font-weight: 700;
+font-size: 28px;
+line-height: 33px;
+text-align: center;
+    @media (min-width: 1200px) {
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
 }
+}
 .clients .list {
+    @media (min-width: 1200px) {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
 }
+}
 .clients-item {
+    width: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    @media (min-width: 1200px) {
         display: flex;
     }
+}
 
     .clients .link {
         display: flex;
