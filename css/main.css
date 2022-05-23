@@ -789,8 +789,6 @@ footer .social .list {
 }
 
 footer .social {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 }
 
