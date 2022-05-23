@@ -1,4 +1,5 @@
 .hero {
+
     background-position: center;
     text-align: center;
     width: 100%;
@@ -10,19 +11,34 @@
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/fon.jpg);
     padding-top: 200px;
     padding-bottom: 200px;
+    // @media (min-width: 480px){
+    //     width: 100%;
+    // }
+    // @media (min-width: 768px){
+    //     width: 768px;
+    // }
+    // @media (min-width: 1200px){
+    //     width: 1200px;
+    // }
 }
 .title {
     font-weight: 900;
-font-size: 44px;
-line-height: 1.36;
+    font-size: 26px;
+line-height: 1.61;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 color: var(--color-2);
-max-width: 700px;
+
 margin-left: auto;
 margin-right: auto;
 margin-bottom: 30px;
+@media (min-width: 1200px){
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 700px;
 }
+}
+
 
 .backdrop {
     position: fixed;

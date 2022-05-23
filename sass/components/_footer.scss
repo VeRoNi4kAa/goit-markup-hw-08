@@ -18,6 +18,9 @@
     flex-wrap: wrap;
     justify-content: center;
     @media (min-width: 1200px){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -26,17 +29,26 @@
 }
 }
 .page-footer__logotip{
+    margin-top: 60px;
+    @media (min-width: 768px){
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    margin-top: 60px;
 }
-footer .container{
+@media (min-width: 1200px){
     display: flex;
     flex-wrap: wrap;
-    justify-content:center;
-    @media (min-width: 1200px){
+   justify-content: left;
+}
+}
+footer .container{
+    @media (min-width: 480px){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    @media (min-width: 768px){
         
     }
     @media (min-width: 1200px){
@@ -55,6 +67,9 @@ footer .social .list {
 footer .social{
    
     justify-content: center;
+    @media (min-width: 768px){
+        margin-left: 165px;
+    }
     @media (min-width: 1200px){
     margin-left: 70px;
 }
@@ -103,11 +118,14 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .footer-inp{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin-top: 20px;
+    margin-bottom: 60px;
     @media (min-width: 1200px){
 display: flex;
 align-items: center;
 margin-top: 20px;
+margin-bottom: 0px;
 }
 }
 .footer-form{
@@ -115,17 +133,20 @@ margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    @media (min-width: 768px){
+        margin-top: 60px;
+        justify-content: center;
+        flex-direction: column
+    }
     @media (min-width: 1200px){
 margin-left: auto;
 }
 }
 .footer-input{
     width: 100%;
-    // width: 358px;
     height: 50px;
 outline: none;
 padding-left: 25px;
-
 border: 1px solid rgba(255, 255, 255, 0.3);
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 border-radius: 4px;
@@ -181,6 +202,7 @@ color: #FFFFFF;
 }
 .address {
     display: flex;
+    justify-content: center;
     color: var(--background-color);
     font-style: normal;
     font-size: 14px;
@@ -189,6 +211,7 @@ color: #FFFFFF;
 .address__item {
     text-align: center;
     @media (min-width: 1200px){
+        text-align: left;
     margin-top: 9px;
 }
 }
@@ -236,9 +259,8 @@ color: #FFFFFF;
             flex-wrap: wrap;   
         }
         @media (min-width: 1200px){
+            text-align: left;
         display: flex;
-        padding-top: 60px;
-        padding-bottom: 60px;
         align-items: center;
     }
 }

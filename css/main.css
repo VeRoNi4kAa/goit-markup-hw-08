@@ -233,15 +233,22 @@ svg {
 
 .title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-2);
-  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
+}
+
+@media (min-width: 1200px) {
+  .title {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 700px;
+  }
 }
 
 .backdrop {
@@ -749,6 +756,9 @@ span.check-icon {
 
 @media (min-width: 1200px) {
   .social-title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -758,17 +768,32 @@ span.check-icon {
 }
 
 .page-footer__logotip {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
   margin-top: 60px;
 }
 
-footer .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+@media (min-width: 768px) {
+  .page-footer__logotip {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-footer__logotip {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+}
+
+@media (min-width: 480px) {
+  footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -790,6 +815,12 @@ footer .social .list {
 
 footer .social {
   justify-content: center;
+}
+
+@media (min-width: 768px) {
+  footer .social {
+    margin-left: 165px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -845,7 +876,9 @@ footer .item-icon a {
 .footer-inp {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin-top: 20px;
+  margin-bottom: 60px;
 }
 
 @media (min-width: 1200px) {
@@ -853,6 +886,7 @@ footer .item-icon a {
     display: flex;
     align-items: center;
     margin-top: 20px;
+    margin-bottom: 0px;
   }
 }
 
@@ -861,6 +895,14 @@ footer .item-icon a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .footer-form {
+    margin-top: 60px;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -930,6 +972,7 @@ footer .item-icon a {
 
 .address {
   display: flex;
+  justify-content: center;
   color: var(--background-color);
   font-style: normal;
   font-size: 14px;
@@ -942,6 +985,7 @@ footer .item-icon a {
 
 @media (min-width: 1200px) {
   .address__item {
+    text-align: left;
     margin-top: 9px;
   }
 }
@@ -1003,9 +1047,8 @@ footer .item-icon a {
 
 @media (min-width: 1200px) {
   .page-footer {
+    text-align: left;
     display: flex;
-    padding-top: 60px;
-    padding-bottom: 60px;
     align-items: center;
   }
 }
