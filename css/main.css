@@ -803,6 +803,14 @@ span.check-icon {
   }
 }
 
+@media (min-width: 768px) {
+  .mobile-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 footer .social .list {
   margin-top: 20px;
 }
