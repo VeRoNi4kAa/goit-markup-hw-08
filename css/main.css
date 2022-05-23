@@ -884,9 +884,10 @@ footer .item-icon a {
 @media (min-width: 1200px) {
   .footer-inp {
     display: flex;
+    flex-wrap: nowrap;
     align-items: center;
-    margin-top: 20px;
-    margin-bottom: 0px;
+    margin-top: 0px;
+    align-items: baseline;
   }
 }
 
