@@ -827,6 +827,7 @@ span.check-icon {
 
 @media (min-width: 1200px) {
   .mobile-footer {
+    margin-bottom: 40px;
     width: 100%;
   }
 }
