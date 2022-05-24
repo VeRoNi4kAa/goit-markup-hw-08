@@ -77,6 +77,11 @@ svg {
 .header {
   display: flex;
   align-items: center;
+  padding-left: 15px;
+}
+
+.img-hero {
+  padding: 0px;
 }
 
 .page-header__nav-site {
