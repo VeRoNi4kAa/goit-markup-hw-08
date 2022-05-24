@@ -953,6 +953,12 @@ footer .item-icon a {
   background-color: var(--background-color-1);
 }
 
+@media (min-width: 1200px) {
+  .footer-input {
+    width: 358px;
+  }
+}
+
 .footer-input::placeholder {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
