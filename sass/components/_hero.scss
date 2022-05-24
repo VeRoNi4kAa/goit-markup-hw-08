@@ -12,13 +12,13 @@
     padding-bottom: 200px;
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
          rgba(47, 48, 58, 0.4)), 
-         url(../images/header-mob.jpg), 
-         url(../images/header-mob-2x.jpg);
+         url(../images/header-mob-min.jpg), 
+         url(../images/header-mob-2x-min.jpg);
    background-size: cover;
         @media (min-width: 768px){
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), 
-        rgba(47, 48, 58, 0.4)), url(../images/header-tab.jpg),
-         url(../images/header-tab-2x.jpg);
+        rgba(47, 48, 58, 0.4)), url(../images/header-tab-min.jpg),
+         url(../images/header-tab-2x-min.jpg);
     }
     @media (min-width: 1200px){
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), 
