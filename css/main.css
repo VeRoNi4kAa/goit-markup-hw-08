@@ -226,9 +226,22 @@ svg {
   margin-right: auto;
   background-size: auto auto;
   background-repeat: no-repeat;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/fon.jpg);
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-mob.jpg), url(../images/header-mob-2x.jpg);
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header-tab.jpg), url(../images/header-tab-2x.jpg);
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/fon.jpg);
+  }
 }
 
 .title {
@@ -764,6 +777,7 @@ span.check-icon {
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--background-color);
+    margin-top: 72px;
   }
 }
 
@@ -808,6 +822,12 @@ span.check-icon {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .mobile-footer {
+    width: 100%;
   }
 }
 
@@ -917,6 +937,7 @@ footer .item-icon a {
 @media (min-width: 1200px) {
   .footer-form {
     margin-left: auto;
+    margin-top: 72px;
   }
 }
 

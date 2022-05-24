@@ -26,6 +26,7 @@
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--background-color);
+    margin-top: 72px;
 }
 }
 .page-footer__logotip{
@@ -61,6 +62,9 @@ footer .container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+@media (min-width: 1200px){
+width: 100% 
 }
 }
 footer .social .list {
@@ -142,6 +146,7 @@ align-items: baseline;
     }
     @media (min-width: 1200px){
 margin-left: auto;
+margin-top: 72px;
 }
 }
 .footer-input{
