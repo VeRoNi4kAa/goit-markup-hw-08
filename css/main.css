@@ -41,10 +41,11 @@ p {
 }
 
 .container {
-  width: 100%;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
+  margin-left: auto;
 }
 
 @media screen and (min-width: 480px) {
@@ -109,8 +110,8 @@ svg {
 
 @media (min-width: 768px) {
   .header .list {
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
+    margin-left: 50px;
   }
 }
 
@@ -118,12 +119,12 @@ svg {
   .header .list {
     display: flex;
     align-items: center;
+    margin-left: auto;
   }
 }
 
 .mail-list, .tel-list {
   display: flex;
-  margin-left: 50px;
 }
 
 .nav-site__navigation {
@@ -194,12 +195,17 @@ svg {
   line-height: 24px;
   text-decoration: none;
   align-items: center;
-  margin-left: 50px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts__mail:hover, .contacts__mail:focus, .contacts__tel:hover, .contacts__tel:focus {
   color: var(--color-1);
+}
+
+@media (min-width: 1200px) {
+  .contacts__mail, .contacts__tel {
+    padding-left: 30px;
+  }
 }
 
 .contacts__icon-mail {
@@ -352,8 +358,6 @@ svg {
   line-height: 1.19;
   color: var(--color-1);
   text-decoration: none;
-  margin-top: 16px;
-  margin-bottom: 16px;
   padding: 0;
 }
 
@@ -763,8 +767,6 @@ span.check-icon {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--color);
-  margin-bottom: 30px;
-  margin-top: 10px;
 }
 
 @media (min-width: 1200px) {
@@ -776,10 +778,17 @@ span.check-icon {
   }
 }
 
+.about-us {
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
 @media screen and (min-width: 768px) {
   .about-us {
     width: calc(100% / 2 - 30px);
     margin-left: 30px;
+    margin-bottom: 30px;
+    margin-top: 10px;
   }
 }
 
@@ -787,6 +796,8 @@ span.check-icon {
   .about-us {
     width: calc(100% / 4 - 30px);
     margin-left: 30px;
+    margin-bottom: 30px;
+    margin-top: 10px;
   }
 }
 
@@ -881,7 +892,6 @@ span.check-icon {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: -30px;
-  margin-right: -30px;
 }
 
 @media (min-width: 768px) {
@@ -904,12 +914,11 @@ span.check-icon {
   width: calc((100% - 60px) / 2);
   margin-right: 30px;
   margin-bottom: 30px;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
   .clients-item {
-    display: flex;
-    justify-content: space-around;
     width: calc((100% - 90px) / 3);
     margin-left: 30px;
     margin-bottom: 30px;
@@ -966,7 +975,6 @@ span.check-icon {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--background-color);
-  margin-top: 60px;
   text-align: center;
   display: flex;
   flex-wrap: wrap;
@@ -983,12 +991,7 @@ span.check-icon {
     line-height: 1.14;
     text-transform: uppercase;
     color: var(--background-color);
-    margin-top: 72px;
   }
-}
-
-.page-footer__logotip {
-  margin-top: 60px;
 }
 
 @media (min-width: 768px) {
@@ -1008,11 +1011,18 @@ span.check-icon {
   }
 }
 
+footer .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 @media (min-width: 768px) {
   footer .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -1025,9 +1035,8 @@ span.check-icon {
 
 @media (min-width: 768px) {
   .mobile-footer {
-    display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
   }
 }
 
@@ -1049,13 +1058,8 @@ footer .social .list {
 }
 
 footer .social {
+  margin-top: 60px;
   justify-content: center;
-}
-
-@media (min-width: 768px) {
-  footer .social {
-    margin-left: 165px;
-  }
 }
 
 @media (min-width: 1200px) {
@@ -1113,7 +1117,6 @@ footer .item-icon a {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 20px;
-  margin-bottom: 60px;
 }
 
 @media (min-width: 1200px) {
@@ -1307,6 +1310,7 @@ footer .item-icon a {
 }
 
 .project {
+  margin-top: 14px;
   margin-bottom: -30px;
 }
 
@@ -1329,7 +1333,7 @@ footer .item-icon a {
   display: flex;
   flex-wrap: wrap;
   font-size: 16px;
-  margin-left: 8px;
+  margin-left: -8px;
 }
 
 @media (min-width: 1200px) {
@@ -1339,11 +1343,11 @@ footer .item-icon a {
     font-size: 16px;
     margin-bottom: 50px;
     flex-wrap: wrap;
+    margin-left: -8px;
   }
 }
 
 .button-current {
-  margin-bottom: 15px;
   background-color: var(--color-1);
   color: var(--background-color);
   font-weight: 500;
@@ -1362,7 +1366,6 @@ footer .item-icon a {
 }
 
 .button {
-  margin-bottom: 15px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -1382,6 +1385,7 @@ footer .item-icon a {
 }
 
 .cards {
+  flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid var(--border-color);
   border-top: none;
@@ -1412,7 +1416,9 @@ footer .item-icon a {
 }
 
 .webproject {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   list-style: none;
   text-decoration: none;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1472,6 +1478,11 @@ footer .item-icon a {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.item {
+  margin-left: 8px;
+  margin-bottom: 15px;
+}
+
 .team {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -1487,7 +1498,7 @@ footer .item-icon a {
 }
 
 .section-about {
-  margin-bottom: 42px;
+  margin-bottom: 30px;
   font-weight: 700;
   line-height: 1.17;
   text-align: center;
@@ -1616,10 +1627,6 @@ li .item-icon svg {
 
 .link:hover svg, .link:focus svg {
   fill: var(--color-1);
-}
-
-.item {
-  margin-left: 8px;
 }
 
 .social-link {
