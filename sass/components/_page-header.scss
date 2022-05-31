@@ -1,5 +1,11 @@
 .page-header {
     border-bottom: 1px solid #ececec;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    @media (min-width: 768px){
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
 }
 .header {
     display: flex;
