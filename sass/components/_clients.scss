@@ -17,7 +17,7 @@
   .clients .list {
     display: flex;
     margin: -15px;
-  //   width: 100%;
+
     @media screen and (max-width: 1199px) {
       flex-wrap: wrap;
     }

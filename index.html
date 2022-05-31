@@ -58,7 +58,7 @@
       <div class="mob-menu is-hidden">
         <div class="container">
           <div class="mob-menu-top">
-        <button class="menu-btn-exit" mob-menu-close>
+        <button class="menu-btn-exit">
           <svg class="exit" width="20" height="20">
             <use href="./images/sprite.svg#icon-Vector-1-1"></use>
           </svg>
@@ -120,9 +120,11 @@
       
       <section class="hero">
         <div class="container img-hero">
-        <h1 class="title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br />ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-        <button type="button1" class="button1" data-modal-open>Заказать услугу</button>
-        <div class="backdrop is-hidden"data-modal>
+        <h1 class="title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br/>ДЛЯ ВАШЕГО БИЗНЕСА</h1>
+        <button type="button" class="button1" data-modal-open>
+          Заказать услугу
+        </button>
+        <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
             <form class="form">
@@ -146,12 +148,13 @@
               </label>
               <label class="form-field">
                 <span class="form-label">Коментарий</span>
-                
-                <textarea type="text" class="form-input-com" name="name" placeholder="Введите текст"></textarea>
+                <textarea class="form-input-com" name="name" placeholder="Введите текст">
+
+                </textarea>
                 <span class="icon"></span>
               </label>
               <label class="checkbox">
-              <input class="checkbox-input" type="checkbox" name="" value="Соглашаюсь с рассылкой и принимаю Условия договора" id="check">
+              <input class="checkbox-input" type="checkbox" name="ch" value="Соглашаюсь с рассылкой и принимаю Условия договора" id="check">
               <span class="check-icon"><svg class="check-icn" width="13px" height="9px"><use href="./images/sprite.svg#icon-Vector-3-1"></use></svg></span>
               <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю <a class="checkbox-a" href="">Условия договора</a></span>
               </label>
@@ -164,15 +167,13 @@
               </svg>
             </button>
           </div>
-        
+        </div>
+        </div>
       </section>
-    </div>
-    </div>
-
-      <section class="section">
-        
+  
+      <section class="section"> 
         <div class="container">
-          <!-- <h2 class="visually-hidden">Преимуществ</h2> -->
+          <h2 class="visually-hidden">Преимуществ</h2>
         <ul class="list-about">
           <li class="about-us">
             <div class="attention">
@@ -218,8 +219,8 @@
               Значимость этих проблем настолько очевидна, что реализация плановых заданий.
             </p>
           </li>
-          </div>
         </ul>
+      </div>
       </section>
 
       <section class="section-work">
@@ -255,24 +256,19 @@
         <ul class="list teams">
           <li class="foto">
             <picture>
-              <source
-              srcset="
-              ./images/img-1desk-1x-min.jpg 1x,
-              ./images/img-1desk-2x-min.jpg 2x,
-              "
-              media="(min-width: 1200px)"
-              />
+              <source srcset="./images/img-1desk-1x-min.jpg 1x,./images/img-1desk-2x-min.jpg 2x" 
+              media="(min-width: 1200px)"/>
               <source
               srcset="
               ./images/img-1-tab-1x-min.jpg 1x,
-              ./images/img-1-tab-2x-min.jpg 2x,
+              ./images/img-1-tab-2x-min.jpg 2x
               "
               media="(min-width: 768px)"
               />
               <source
               srcset="
               ./images/img-1-mob-1x-min.jpg 1x,
-              ./images/img-1-mob-2x-min.jpg 2x,
+              ./images/img-1-mob-2x-min.jpg 2x
               "
               media="(min-width: 480px)"
               />
@@ -319,21 +315,21 @@
               <source
               srcset="
               ./images/img-2desk-1x-min.jpg 1x,
-              ./images/img-2desk-2x-min.jpg 2x,
+              ./images/img-2desk-2x-min.jpg 2x
               "
               media="(min-width: 1200px)"
               />
               <source
               srcset="
               ./images/img-2-tab-1x-min.jpg 1x,
-              ./images/img-2-tab-2x-min.jpg 2x,
+              ./images/img-2-tab-2x-min.jpg 2x
               "
               media="(min-width: 768px)"
               />
               <source
               srcset="
               ./images/img-2-mob-1x-min.jpg 1x,
-              ./images/img-2-mob-2x-min.jpg 2x,
+              ./images/img-2-mob-2x-min.jpg 2x
               "
               media="(min-width: 480px)"
               />
@@ -380,21 +376,21 @@
               <source
               srcset="
               ./images/img-3desk-1x-min.jpg 1x,
-              ./images/img-3desk-2x-min.jpg 2x,
+              ./images/img-3desk-2x-min.jpg 2x
               "
               media="(min-width: 1200px)"
               />
               <source
               srcset="
               ./images/img-3-tab-1x-min.jpg 1x,
-              ./images/img-3-tab-2x-min.jpg 2x,
+              ./images/img-3-tab-2x-min.jpg 2x
               "
               media="(min-width: 768px)"
               />
               <source
               srcset="
               ./images/img-3-mob-1x-min.jpg 1x,
-              ./images/img-3-mob-2x-min.jpg 2x,
+              ./images/img-3-mob-2x-min.jpg 2x
               "
               media="(min-width: 480px)"
               />
@@ -441,21 +437,21 @@
               <source
               srcset="
               ./images/img-4desk-1x-min.jpg 1x,
-              ./images/img-4desk-2x-min.jpg 2x,
+              ./images/img-4desk-2x-min.jpg 2x
               "
               media="(min-width: 1200px)"
               />
               <source
               srcset="
               ./images/img-4-tab-1x-min.jpg 1x,
-              ./images/img-4-tab-2x-min.jpg 2x,
+              ./images/img-4-tab-2x-min.jpg 2x
               "
               media="(min-width: 768px)"
               />
               <source
               srcset="
               ./images/img-4-mob-1x-min.jpg 1x,
-              ./images/img-4-mob-2x-min.jpg 2x,
+              ./images/img-4-mob-2x-min.jpg 2x
               "
               media="(min-width: 480px)"
               />
