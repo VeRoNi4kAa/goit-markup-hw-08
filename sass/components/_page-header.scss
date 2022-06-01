@@ -171,7 +171,7 @@
     left: 0;
     background-color: #ffffff;
     width: 100vw;
-    height: 720px;
+    height: 630px;
     z-index: 1;
     padding-top: 10px;
     padding-bottom: 48px;
@@ -228,11 +228,13 @@ color: #757575;
 .mob-social-link{
     text-decoration: none;
     font-weight: 500;
-font-size: 18px;
+font-size: 14px;
 line-height: 0.81;
 letter-spacing: 0.02em;
-
 color: #2196F3;
+@media (min-width: 480px){
+    font-size: 18px;
+}
 }
 
 .mob__navigation{
